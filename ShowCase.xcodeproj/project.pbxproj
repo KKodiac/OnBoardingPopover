@@ -14,6 +14,7 @@
 		0BA88FED2A2B598700CD9E2F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA88FEC2A2B598700CD9E2F /* Home.swift */; };
 		0BA88FEF2A2B62BC00CD9E2F /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA88FEE2A2B62BC00CD9E2F /* Highlight.swift */; };
 		0BA88FF12A2B63A500CD9E2F /* ShowCaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA88FF02A2B63A500CD9E2F /* ShowCaseHelper.swift */; };
+		0BA88FF32A2B7A0E00CD9E2F /* IdentifiablePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA88FF22A2B7A0E00CD9E2F /* IdentifiablePlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		0BA88FEC2A2B598700CD9E2F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		0BA88FEE2A2B62BC00CD9E2F /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
 		0BA88FF02A2B63A500CD9E2F /* ShowCaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseHelper.swift; sourceTree = "<group>"; };
+		0BA88FF22A2B7A0E00CD9E2F /* IdentifiablePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiablePlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				0BA88FEE2A2B62BC00CD9E2F /* Highlight.swift */,
+				0BA88FF22A2B7A0E00CD9E2F /* IdentifiablePlace.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				0BA88FDF2A2B595E00CD9E2F /* ContentView.swift in Sources */,
 				0BA88FED2A2B598700CD9E2F /* Home.swift in Sources */,
 				0BA88FF12A2B63A500CD9E2F /* ShowCaseHelper.swift in Sources */,
+				0BA88FF32A2B7A0E00CD9E2F /* IdentifiablePlace.swift in Sources */,
 				0BA88FDD2A2B595E00CD9E2F /* ShowCaseApp.swift in Sources */,
 				0BA88FEF2A2B62BC00CD9E2F /* Highlight.swift in Sources */,
 			);

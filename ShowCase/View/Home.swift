@@ -9,6 +9,7 @@ import SwiftUI
 import MapKit
 
 struct Home: View {
+    let place: IdentifiablePlace = .init(lat: 37.3346, long: -122.0090)
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.3346, longitude: -122.0090), latitudinalMeters: 1000, longitudinalMeters: 1000)
     
     var body: some View {
@@ -16,7 +17,20 @@ struct Home: View {
             GeometryReader { geometry in
                 let safeArea = geometry.safeAreaInsets
                 
-                Map(coordinateRegion: $region)
+                Map(coordinateRegion: $region, annotationItems: [place]) { place in
+                    MapAnnotation(coordinate: place.location) {
+                        Rectangle()
+                            .fill(.clear)
+                            .frame(width: 50, height: 50)
+                            .showCase(order: -1,
+                                      title: "Click here to get place information",
+                                      cornerRadius: 10,
+                                      style: .continuous)
+                            .offset(y: -10)
+                            
+                    }
+                    
+                }
                     .overlay(alignment: .top, content: {
                         Rectangle()
                             .fill(.ultraThinMaterial)
@@ -93,7 +107,7 @@ struct Home: View {
                     .foregroundColor(.clear)
                     .frame(width: 45, height: 45)
                     .showCase(order: 3,
-                              title: "Location Enalbed Tag's",
+                              title: "Location Enabled Tag's",
                               cornerRadius: 10,
                               style: .continuous)
                     .frame(maxWidth: .infinity)
